@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Front-End Developer
+                </p>
+                <h1>
+                    I'm <span>Mohit Patel</span> <br>From India
+                </h1>
+            </div>
+          </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user.jpg">
+                    </div>
+                        <div class="about-col-2">
+                            <h1 class="subtitle">
+                                About Me
+                            </h1>
+                            <p>Dedicated and driven Computer Engineering student in the second year, with a strong passion for technology and problem-solving. Possesses hands-on experience in SQL database management acquired through a internship, where I got to showcase practical skills in database systems. Actively participated in the prestigious Smart India Hackathon, demonstrating the ability to work collaboratively in a high-pressure, real-world problem-solving environment. I am eager to leverage my academic knowledge and practical experience to contribute effectively to innovative projects in the field of computer engineering.</p>
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                                    
+                                     
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li>
+                                            <span>HTML AND CSS</span><br>For Designing Web Pages
+                                        </li>
+                                        <li>
+                                            <span>JavaScript</span><br>For User Interaction
+                                        </li>
+                                        <li>
+                                            <span>My SQL</span><br>For Database Management
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span>1st Dec to 31st Dec</span><br>Intern At Prodigy Infotech</li>
+                                        <li>
+                                            <span>2023-Current</span><br>Internship At REDX
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li>
+                                            <span>Cambridge School,Miraj</span><br>[Passed Out In 2020]<br>[Score=93.20%]<br>99 Marks in Sanskrit.
+                                        </li>
+                                        <li>
+                                            <span>Willington College,Sangli</span><br><p>[HSC-Sciencs]</p>[August 2020 - March 2022]<br>Score[73.50]
+                                        </li>
+                                        <li>
+                                            <span>B.Tech from KJ Somaiya Institute Of Technology</span><br>Pursuing Computer Engineering<br><p>[Nov 2022 - Now]</p>1st Year CGPA=9.25
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.png" alt="work-1">
+                        <div class="layer">
+                            <h3>Drum Kit Website</h3>
+                            <p>The Website plays Drum Sounds when a particular part of the website is Clicked or a
+                                particular
+                                Key like 'w', 'a', 's', 'd', 'j', 'k', 'l'.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <!-- Use "fas fa-arrow-up-right" for Font Awesome icons -->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-2.png" alt="work-2">
+                        <div class="layer">
+                            <h3>Simon Game - Card Version</h3>
+                            <p>This Game allows users to click a particular Card. It also keeps the user Engaged by making
+                                them Memorizing a Pattern and keep them playing the Game.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png" alt="work-3">
+                        <div class="layer">
+                            <h3>Tic-Tac-Toe Game</h3>
+                            <p>This is a 2 player Game. One player plays as X and the other player plays as O. The First
+                                Person who gets Three consecutive signs on Board Wins.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i>mohit0612patel@gmail.com</p>
+                        <p> <i class="fa-solid fa-square-phone"></i>8459803501</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/_patel.mohit?igsh=MXV2MHMzNnl2MnhuZg=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/mohit-patel-5135552a3/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="Images/Resume.docx" download class="btn btn2">Download CV</a>
+                    </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Please Enter Your Name" required>
+                                <input type="email" name="Email" placeholder="Enter Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg">Hello</span>  
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Mohit <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+    
+        
+        <script>
+            var sidemenu = document.getElementById("side-menu");
+    
+            function openmenu() {
+                sidemenu.style.right="0";
+            }
+    
+            function closemenu() {
+                sidemenu.style.right = '-200px';
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx2ej6MIjIHjErE-C9YaeM3c6zgeMZQtA4161eFQl1cj_hOW6-_Vy6AEgkTP2Y_viCv/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+    
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent Successfully!"
+                        setTimeout(function() {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+            
+    </body>
+    </html>
